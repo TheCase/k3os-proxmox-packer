@@ -1,10 +1,10 @@
 ##Packer k3os template builder for Proxmox
 
-This will create a clonable k3s template in your Proxmox cluster.  
+This will create a clonable k3os template in your Proxmox cluster.  
 
 - creates and applies ssh keys for cloned guests 
-  - k3s.pem
-  - k3s.pem.pub 
+  - k3os.pem
+  - k3os.pem.pub 
 - patches qemu-guest-agent for provisioner step
 
 #### Usage:
