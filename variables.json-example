@@ -1,0 +1,14 @@
+  
+{
+  "vm_id": "9000",
+  "proxmox_url": "http://proxmox.local:8006/api2/json",
+  "proxmox_ssl": "false",
+  "proxmox_user": "root@pam",
+  "proxmox_pass": "secret",
+  "target_node": "pve-01",
+  "iso_storage_pool": "isos",
+  "cores": "4",
+  "memory": "8192",
+  "disk_size": "20G",
+  "boot_wait": "5s"
+}
