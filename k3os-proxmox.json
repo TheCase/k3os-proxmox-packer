@@ -47,14 +47,13 @@
          {
            "type": "scsi",
            "disk_size": "{{ user `disk_size`}}",
-           "storage_pool": "local-lvm",
-           "storage_pool_type": "lvm",
+           "storage_pool": "{{ user `vm_storage_pool` }}",
+           "storage_pool_type": "{{ user `vm_storage_pool_type` }}",
            "format": "raw"
          }
       ],
       "http_directory":"http",
       "boot_wait": "{{ user `boot_wait`}}",
-      "boot_key_interval": "1ms",
       "boot_command": [
          "e<down><down><down><down><down><down><down><left>",
          " ssh_authorized_keys=\"{{ user `authorized_keys` }}\" boot_cmd=\"echo GA_PATH=/dev/vport2p1>/etc/conf.d/qemu-guest-agent\"<F10>"

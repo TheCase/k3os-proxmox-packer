@@ -7,6 +7,8 @@
   "proxmox_pass": "secret",
   "target_node": "pve-01",
   "iso_storage_pool": "isos",
+  "vm_storage_pool": "local-lvm",
+  "vm_storage_pool_type": "lvm",
   "cores": "4",
   "memory": "8192",
   "disk_size": "20G",
