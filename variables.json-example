@@ -9,8 +9,8 @@
   "iso_storage_pool": "isos",
   "vm_storage_pool": "local-lvm",
   "vm_storage_pool_type": "lvm",
-  "cores": "4",
-  "memory": "8192",
-  "disk_size": "20G",
+  "cores": "2",
+  "memory": "2048",
+  "disk_size": "16G",
   "boot_wait": "5s"
 }

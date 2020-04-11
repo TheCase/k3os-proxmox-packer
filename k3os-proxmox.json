@@ -27,7 +27,7 @@
       "communicator": "ssh",
       "ssh_username": "rancher",
       "ssh_password": "rancher",
-      "ssh_private_key_file": "k3os.pem",
+      "ssh_private_key_file": "packer_cache/build/k3os.pem",
 
       "vm_name": "k3os-template",
       "vm_id": "{{ user `vm_id` }}",
@@ -62,11 +62,11 @@
   ],
   "provisioners": [
     { "type": "file",
-      "source": "files/config.yaml",
+      "source": "packer_cache/build/config.yaml",
       "destination": "/tmp/config.yaml"
     },
     { "type": "file",
-      "source": "files/install.sh",
+      "source": "packer_cache/build/install.sh",
       "destination": "/tmp/install.sh"
     },
     {

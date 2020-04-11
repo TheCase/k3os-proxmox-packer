@@ -1,5 +1,2 @@
 packer_cache/*
-**/*.pem*
-files/*
 variables.json
-sshkey.json
