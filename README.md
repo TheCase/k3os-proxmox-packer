@@ -19,7 +19,8 @@ Run:
 
 At the end of the run, you'll have fresh ssh keys to access any freshly booted clones.
 
+TIP:  Migrate the template's volume to a shared storage location to allow link-cloning the template to other nodes.
 
 ### Questions, support?  
 
-Please file an issue in the project tracker.
+Please file an issue in the [project_tracker](./issues).
