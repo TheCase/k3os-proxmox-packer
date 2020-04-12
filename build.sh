@@ -32,7 +32,7 @@ cat <<EOT > ${CACHE}/sshkey.json
 EOT
 
 echo
-cp -v ${CACHE}/${KEYNAME} ~/.ssh/.
+cp -v ${CACHE}/${KEYNAME}* ~/.ssh/.
 echo config template created.  Your private key has been copied to ~/.ssh/${KEYNAME}
 
 echo building image...
