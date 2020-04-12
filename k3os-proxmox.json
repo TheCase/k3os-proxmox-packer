@@ -38,7 +38,7 @@
       "os": "l26",
       "network_adapters": [
          {
-           "model": "e1000",
+           "model": "virtio",
            "bridge": "vmbr0"
          }
       ],
