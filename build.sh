@@ -36,6 +36,6 @@ cp -v ${CACHE}/${KEYNAME}* ~/.ssh/.
 echo config template created.  Your private key has been copied to ~/.ssh/${KEYNAME}
 
 echo building image...
-PACKER_LOG=1 packer build -var-file=variables.json -var-file=${CACHE}/sshkey.json k3os-proxmox.json
-#packer build -var-file=variables.json -var-file=${CACHE}/sshkey.json k3os-proxmox.json
+#PACKER_LOG=1 packer build -var-file=variables.json -var-file=${CACHE}/sshkey.json k3os-proxmox.json
+packer build -var-file=variables.json -var-file=${CACHE}/sshkey.json k3os-proxmox.json
 echo done.
