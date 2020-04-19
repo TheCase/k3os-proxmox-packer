@@ -57,7 +57,9 @@
       "boot_key_interval": "20ms",
       "boot_command": [
          "e<down><down><down><down><down><down><down><left>",
-         " ssh_authorized_keys=\"{{ user `authorized_keys` }}\" boot_cmd=\"echo GA_PATH=/dev/vport2p1>/etc/conf.d/qemu-guest-agent\"<F10>"
+         "boot_cmd=\"echo ",
+         "GA_PATH=/dev/vport2p1>/etc/conf.d/qemu-guest-agent\" ",
+         "ssh_authorized_keys=\"{{ user `authorized_keys` }}\"<F10>"
       ]
     }
   ],
