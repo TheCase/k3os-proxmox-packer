@@ -6,4 +6,7 @@ write_files:
     GA_PATH="/dev/vport2p1"
   owner: root
   permissions: '0644'
+k3os:
+  data_sources:
+  - cdrom
 
