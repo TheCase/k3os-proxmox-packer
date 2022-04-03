@@ -4,7 +4,6 @@ mkdir -p ${CACHE}
 echo generating SSH keys...
 KEYNAME="k3os_new.pem"
 yes | ssh-keygen -t ed25519 -N '' -f ${CACHE}/${KEYNAME} -C 'rancher@k3os'
-exit
 
 echo
 
