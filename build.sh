@@ -3,7 +3,7 @@ CACHE=packer_cache/build
 mkdir -p ${CACHE}
 echo generating SSH keys...
 KEYNAME="k3os.pem"
-yes | ssh-keygen -b 1024 -t rsa -N '' -f ${CACHE}/${KEYNAME} -C 'rancher@k3os'
+yes | ssh-keygen -b 2048 -t rsa -N '' -f ${CACHE}/${KEYNAME} -C 'rancher@k3os'
 
 echo
 
